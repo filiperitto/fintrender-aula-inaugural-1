@@ -33,7 +33,7 @@
                 }
             }
 
-            @include respond-to-min(750){
+            @include respond-to-min(980){
                 width: 30%;
                 padding: 0 85px;
                 &:after{
@@ -63,6 +63,22 @@
                 
                 color: #183C67;
             }
+        }
+    }
+}
+.moduleCta-box-2{
+    width: 100%;
+    .col33{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        @include respond-to-min(750){
+            width: 33.3%;
+        }
+        p{
+            padding-left: 30px;
         }
     }
 }

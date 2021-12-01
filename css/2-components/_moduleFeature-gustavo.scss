@@ -1,0 +1,87 @@
+.moduleFeature-gustavo{
+    width: 100%;
+    height: auto;
+    background: #162749;
+    position: relative;
+    .background{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: row-reverse;
+        .photo{
+            width: 100%;
+            height: 400px;
+            background: url(../imgs/photo-bg.jpg) no-repeat top center;
+            background-size: cover;
+            @include respond-to-min(800){
+                width: 40%;
+                height: 100%;
+            }
+        }
+    }
+    .wrap{
+        padding-top: 400px;
+        @include respond-to-min(800){
+            padding-top: 0;
+        }
+    }
+    .col60{
+        h3{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 52px;
+            /* identical to box height, or 124% */
+            
+            letter-spacing: -0.4px;
+            
+            /* Colors / White */
+            
+            color: #FFFFFF;
+        }
+        p{
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 32px;
+            /* or 145% */
+
+
+            /* Colors / White */
+
+            color: #FFFFFF;
+            span{
+                color: #FFBD63;
+            }
+        }
+        .slider-text{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 50px;
+            .card{
+                width: 50%;
+                svg{
+
+                }
+                p{
+                    font-family: DM Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                    /* or 162% */
+
+
+                    /* Colors / White */
+
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

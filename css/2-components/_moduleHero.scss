@@ -8,14 +8,18 @@
             font-family: $font-montserrat;
             font-style: normal;
             font-weight: bold;
-            font-size: 39.5683px;
-            line-height: 82px;
+            font-size: 27.5683px;
+            line-height: 38px;
             /* identical to box height, or 208% */
             
             letter-spacing: 0.025em;
             text-transform: uppercase;
             
             color: $lightblue;
+            @include respond-to-min(750){
+                font-size: 39.5683px;
+                line-height: 82px;
+            }
             span{
                 background: $lightblue;
                 color: $dark-blue;
@@ -32,6 +36,18 @@
             letter-spacing: 0.025em;
             
             color: #FFFFFF;
+        }
+        .btn{
+            animation: newpulse 1.25s infinite cubic-bezier(.66,0,0,1);
+            
+            @keyframes newpulse{
+                0%{
+                    box-shadow: 0px 0px 0px rgba(255, 189, 99, 100);
+                }
+                100%{
+                    box-shadow: 0px 0px 0px 14px rgba(255, 189, 99, 0);
+                }
+            }
         }
     }
     .col40{

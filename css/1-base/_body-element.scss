@@ -5,6 +5,7 @@ html {
     line-height: 1.4;
     //scroll-behavior: smooth;
     background-color: $bg;
+    overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -80,7 +81,7 @@ body {
 main{
     width: 100%;
     position: relative;
-    //overflow: hidden;
+    overflow: hidden;
 }
 //== Section Defaut ::::
 section {
