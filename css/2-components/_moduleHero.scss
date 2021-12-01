@@ -1,0 +1,43 @@
+.moduleHero{
+    width: 100%;
+    height: auto;
+    background: url(../imgs/bg-hero.jpg) no-repeat top center;
+    background-size: cover !important;
+    .col60{
+        h1{
+            font-family: $font-montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 39.5683px;
+            line-height: 82px;
+            /* identical to box height, or 208% */
+            
+            letter-spacing: 0.025em;
+            text-transform: uppercase;
+            
+            color: $lightblue;
+            span{
+                background: $lightblue;
+                color: $dark-blue;
+                padding: 0 4px;
+            }
+        }
+        h2{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 34.6154px;
+            line-height: 43px;
+            /* or 124% */
+            
+            letter-spacing: 0.025em;
+            
+            color: #FFFFFF;
+        }
+    }
+    .col40{
+        img{
+            width: 120%;
+            height: auto;
+        }
+    }
+}
