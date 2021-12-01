@@ -81,14 +81,12 @@
                 color: #FFBD63;
             }
         }
-        .slider-wrap{
-            padding-left: 50px;
-        }
         .slider-text{
             width: 100%;
             height: auto;
             display: flex;
             flex-wrap: wrap;
+            padding-left: 50px;
             .card{
                 width: 100%;
                 @include respond-to-min(750){
