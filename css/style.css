@@ -2226,6 +2226,7 @@ footer .copy-box ul li a {
 .moduleForm form .form-group .form-input input,
 .moduleForm form .form-checkbox .form-input input {
   width: calc(100%);
+  color: #0E1C33;
 }
 
 .moduleForm form .form-group .btn,
