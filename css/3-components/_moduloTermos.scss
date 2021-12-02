@@ -1,23 +1,26 @@
-.moduloTermos{
+.moduleTermos{
     padding-top: 35px;
     p{
-        text-align: left;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
         font-size: 16px;
-        line-height: 25px;
-        font-weight: 300;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        opacity: 1;
-        padding-top: 25px;
-        font-family: $font-regular;
+        line-height: 26px;
+        /* or 162% */
+
+        text-align: left;
+
+        /* Colors / Text */
+
+        color: rgba(21, 20, 57, 0.7);
     }
     h2{
-        color: #83DEDD;
+        color: $dark-blue;
         font-family: $font-regular;
     }
     ul{
         li{
-            color: #fff;
+            color: rgba(21, 20, 57, 0.7);
             font-family: $font-regular;
         }
     }

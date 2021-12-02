@@ -3,6 +3,7 @@
     height: auto;
     background: url(../imgs/bg-hero.jpg) no-repeat top center;
     background-size: cover !important;
+    overflow: hidden;
     .col60{
         @include respond-to-min(800){
             padding: 45px 0 180px;

@@ -579,7 +579,6 @@ html {
   font-size: 1em;
   line-height: 1.4;
   background-color: #F6F6F6;
-  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -1172,7 +1171,6 @@ footer {
   padding: 0;
   background: #162749;
   padding-top: 60px;
-  margin-bottom: 87px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -1511,40 +1509,146 @@ footer .copy-box ul li a {
   padding: 0;
 }
 
-.moduloTermos {
+.moduleTermos {
   padding-top: 35px;
 }
 
-.moduloTermos p {
-  text-align: left;
+.moduleTermos p {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
-  line-height: 25px;
-  font-weight: 300;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
-  padding-top: 25px;
+  line-height: 26px;
+  /* or 162% */
+  text-align: left;
+  /* Colors / Text */
+  color: rgba(21, 20, 57, 0.7);
+}
+
+.moduleTermos h2 {
+  color: #223C53;
   font-family: "DM Sans", sans-serif;
 }
 
-.moduloTermos h2 {
-  color: #83DEDD;
+.moduleTermos ul li {
+  color: rgba(21, 20, 57, 0.7);
   font-family: "DM Sans", sans-serif;
 }
 
-.moduloTermos ul li {
-  color: #fff;
-  font-family: "DM Sans", sans-serif;
+.moduleHero.obrigado .col100 {
+  padding: 20px 0 95px;
 }
 
-@media only screen and (min-width: 750px) {
-  .obrigado-fix header {
-    padding: 270px 0px 340px;
+@media only screen and (min-width: 800px) {
+  .moduleHero.obrigado .col100 {
+    padding: 45px 0 180px;
   }
 }
 
-.obrigado-fix footer {
-  margin: 0;
+.moduleHero.obrigado .col100 h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27.5683px;
+  line-height: 38px;
+  /* identical to box height, or 208% */
+  text-align: center;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  color: #61BBD1;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleHero.obrigado .col100 h1 {
+    font-size: 39.5683px;
+    line-height: 54px;
+    text-align: center;
+  }
+}
+
+.moduleHero.obrigado .col100 h1 span {
+  background: #61BBD1;
+  color: #223C53;
+  padding: 0 4px;
+}
+
+.moduleHero.obrigado .col100 h2 {
+  max-width: 720px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.6154px;
+  line-height: 34px;
+  /* or 124% */
+  letter-spacing: 0.025em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleHero.obrigado .col100 h2 {
+    font-size: 34.6154px;
+    line-height: 43px;
+    text-align: center;
+  }
+}
+
+.moduleHero.obrigado .col100 h4 {
+  max-width: 720px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 27px;
+  /* or 153% */
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleHero.obrigado .col100 h4 {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+  }
+}
+
+.moduleHero.obrigado .col100 h3 {
+  max-width: 720px;
+  margin: auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  /* or 170% */
+  text-align: center;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  margin-top: 35px;
+  color: #75E2F8;
+}
+
+.moduleHero.obrigado .col100 .btn {
+  width: 100%;
+  background: #8DD171;
+  color: #fff;
+  padding: 13px 22px;
+  font-size: 14px;
+  margin: auto;
+  display: table;
+  margin-top: 18px;
+}
+
+.moduleHero.obrigado .col100 .btn svg {
+  margin-right: 13px;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleHero.obrigado .col100 .btn {
+    width: auto;
+  }
 }
 
 .moduleHero {
@@ -1552,6 +1656,7 @@ footer .copy-box ul li a {
   height: auto;
   background: url(../imgs/bg-hero.jpg) no-repeat top center;
   background-size: cover !important;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 800px) {

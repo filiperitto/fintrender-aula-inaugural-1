@@ -23,12 +23,11 @@
                 window.history.pushState('', '', targetID);
                 clearInterval(checkIfDone);
             }
-        }, 150);
+        }, 1500);
     }
 
 	scrollTo();
 })();
-
 //======================== /Anchor Scrollsmooth
 
 

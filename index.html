@@ -14,7 +14,6 @@
     <meta name="description" content="fintrender">
     <meta name="keywords" content="fintrender, HTML5, CSS3">
 
-    <link rel="icon" type="image/png" sizes="192x192" href="imgs/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
 
@@ -42,7 +41,7 @@
                 <div class="col60">
                     <h1>Encontro Online <span>Gratuito</span></h1>
                     <h2>Por que você deve investir 1% do seu patrimônio em ativos de altíssimo risco?</h2>
-                    <div class="menu-item"><a href="#teste" class="btn">Me Increver Agora</a></div>
+                    <div class="menu-item"><a href="#formulario" class="btn">Me Increver Agora</a></div>
                 </div>
                 <div class="col40">
                     <img alt="bitcoin-hero" src="imgs/bit-coin-hero.png">
@@ -171,22 +170,26 @@
             </div>
         </section>
 
-        <section id="teste" class="moduleForm">
+        <section id="formulario" class="moduleForm">
             <div class="wrap">
                 <p>Chegou a sua vez de descobrir com Gustavo Cunha porque investir 1% do seu patrimônio 
                     em ativos de altíssimo risco.
                     </p>
-                <form>
+                <form id="lead" method="POST" action='index.php' data-ajax='false'>
+                    <input type="hidden" name="page" value="marca_view_email">
+                    <input type="hidden" name="origem" value=##ORIGEM##>
+                    <input type="hidden" name="enviaEmail" value="1" />
+
                     <div class="form-group">
                         <div class="form-input">
-                            <input type="text" placeholder="Seu Nome" required>
+                            <input type="text" name="name" id="name" placeholder="Seu Nome" required>
                         </div>
                         <div class="form-input">
-                            <input type="email" placeholder="Seu Email" required>
+                            <input type="email" name="email" id="email" placeholder="Seu Email" required>
                         </div>
                         
                         
-                        <button class="btn" id="btn-submit">
+                        <button type="submit" class="btn" id="btn-submit">
                             Garantir Aula
                         </button>
                     </div>
@@ -195,7 +198,7 @@
                     <div class="form-checkbox termos">
                                     
                         <label class="link-terms form-check-label" for="terms">Li e Aceito os <a href="?page=navega&pg=termos" style="color: #75E2F8;" target="_blank">Termos de Uso</a>
-                            <input type="checkbox" class="checkbox form-check-input" name="envia_email_produto" id="terms" checked>
+                            <input type="checkbox" class="checkbox form-check-input" name="envia_email_aula" id="terms" checked>
                             <span class="checkmark"></span>
                         </label>
                     </div>

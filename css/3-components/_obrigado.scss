@@ -1,10 +1,105 @@
-.obrigado-fix{
-    header{
-        @include respond-to-min(750){
-            padding: 270px 0px 340px;
+.moduleHero.obrigado{
+    .col100{
+            padding: 20px 0 95px;
+        @include respond-to-min(800){
+            padding: 45px 0 180px;
         }
-    }
-    footer{
-        margin: 0;
+        h1{
+            font-family: $font-montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 27.5683px;
+            line-height: 38px;
+            /* identical to box height, or 208% */
+            text-align: center;
+            
+            letter-spacing: 0.025em;
+            text-transform: uppercase;
+            
+            color: $lightblue;
+            @include respond-to-min(800){
+                font-size: 39.5683px;
+                line-height: 54px;
+                text-align: center;
+            }
+            span{
+                background: $lightblue;
+                color: $dark-blue;
+                padding: 0 4px;
+            }
+        }
+        h2{
+            max-width: 720px;
+            margin: auto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22.6154px;
+            line-height: 34px;
+            /* or 124% */
+            
+            letter-spacing: 0.025em;
+            text-align: center;
+            
+            color: #FFFFFF;
+            @include respond-to-min(800){
+                font-size: 34.6154px;
+                line-height: 43px;
+                text-align: center;
+            }
+        }
+        h4{
+            max-width: 720px;
+            margin: auto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 27px;
+            /* or 153% */
+
+            text-align: center;
+            letter-spacing: 0.025em;
+
+            color: #FFFFFF;
+            margin-top: 40px;
+            @include respond-to-min(800){
+                font-size: 18px;
+                line-height: 27px;
+                text-align: center;
+            }
+        }
+
+        h3{
+            max-width: 720px;
+            margin: auto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 34px;
+            /* or 170% */
+            
+            text-align: center;
+            letter-spacing: 0.025em;
+            text-transform: uppercase;
+            margin-top: 35px;
+            
+            color: #75E2F8;
+        }
+        .btn{
+            width: 100%;
+            background: #8DD171;
+            color: #fff;
+            padding: 13px 22px;
+            font-size: 14px;
+            margin: auto;
+            display: table;
+            margin-top: 18px;
+            svg{
+                margin-right: 13px;
+            }
+            
+            @include respond-to-min(800){
+                width: auto;
+            }
+        }
     }
 }
