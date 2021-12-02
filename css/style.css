@@ -1989,6 +1989,11 @@ footer .copy-box ul li a {
   color: #FFBD63;
 }
 
+.moduleFeature-gustavo .col60 .slider-wrap {
+  padding-left: 50px;
+  position: relative;
+}
+
 .moduleFeature-gustavo .col60 .slider-text {
   width: 100%;
   height: auto;
@@ -1997,7 +2002,6 @@ footer .copy-box ul li a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 50px;
 }
 
 .moduleFeature-gustavo .col60 .slider-text .card {
@@ -2010,6 +2014,18 @@ footer .copy-box ul li a {
   }
 }
 
+.moduleFeature-gustavo .col60 .slider-text .card icon {
+  display: block;
+  height: 42px;
+  position: relative;
+}
+
+.moduleFeature-gustavo .col60 .slider-text .card icon img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
 .moduleFeature-gustavo .col60 .slider-text .card p {
   font-family: DM Sans;
   font-style: normal;
@@ -2017,8 +2033,39 @@ footer .copy-box ul li a {
   font-size: 16px;
   line-height: 26px;
   /* or 162% */
+  padding-right: 40px;
   /* Colors / White */
   color: #FFFFFF;
+}
+
+.moduleFeature-gustavo .col60 .control-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moduleFeature-gustavo .col60 .control-bar .dots-box .glider-dots {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.moduleFeature-gustavo .col60 .control-bar .dots-box .glider-dots .glider-dot {
+  background: rgba(255, 189, 99, 0.15);
+}
+
+.moduleFeature-gustavo .col60 .control-bar .dots-box .glider-dots .glider-dot.active {
+  background: #ffbd63;
 }
 
 .moduleForm {

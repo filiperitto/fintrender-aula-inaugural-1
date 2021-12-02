@@ -81,19 +81,29 @@
                 color: #FFBD63;
             }
         }
+        .slider-wrap{
+            padding-left: 50px;
+            position: relative;
+        }
         .slider-text{
             width: 100%;
             height: auto;
             display: flex;
             flex-wrap: wrap;
-            padding-left: 50px;
             .card{
                 width: 100%;
                 @include respond-to-min(750){
                     width: 50%;
                 }
-                svg{
-
+                icon{
+                    display: block;
+                    height: 42px;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
                 }
                 p{
                     font-family: DM Sans;
@@ -102,11 +112,35 @@
                     font-size: 16px;
                     line-height: 26px;
                     /* or 162% */
+                    padding-right: 40px;
 
 
                     /* Colors / White */
 
                     color: #FFFFFF;
+                }
+            }
+        }
+        .control-bar{
+            position: absolute;
+            top: 0;
+            left: 0;
+            //transform: rotate(90deg);
+            bottom: 0;
+            margin: auto;
+            right: auto;
+            display: flex;
+            align-items: center;
+            .dots-box{
+                .glider-dots{
+                    flex-direction: column;
+                    .glider-dot{
+                        background: rgba(255, 189, 99, 0.15);
+                        &.active{
+                            
+                        background: rgba(255, 189, 99, 1);
+                        }
+                    }
                 }
             }
         }
