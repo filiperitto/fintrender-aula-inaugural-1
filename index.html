@@ -175,7 +175,11 @@
                 <p>Chegou a sua vez de descobrir com Gustavo Cunha porque investir 1% do seu patrimônio 
                     em ativos de altíssimo risco.
                     </p>
-                <form id="lead" action='obrigado.html'>
+                <form id="lead" method="POST" action="index.php" data-ajax="false">
+                    <input type="hidden" name="page" value="marca_view_email" />
+                    <input type="hidden" name="origem" value="##ORIGEM##" />
+                    <input type="hidden" name="enviaEmail" value="1" />
+                    <input type="hidden" name="pgObrigado" value="obrigado" />
 
                     <div class="form-group">
                         <div class="form-input">
@@ -194,8 +198,8 @@
 
                     <div class="form-checkbox termos">
                                     
-                        <label class="link-terms form-check-label" for="terms">Li e Aceito os <a href="?page=navega&pg=termos" style="color: #75E2F8;" target="_blank">Termos de Uso</a>
-                            <input type="checkbox" class="checkbox form-check-input" name="envia_email_aula" id="terms" required>
+                        <label class="link-terms form-check-label" for="terms">Li e Aceito os <a href="termos.html" style="color: #75E2F8;" target="_blank">Termos de Uso</a>
+                            <input type="checkbox" class="chekbox form-check-input" name="envia_email_aula" id="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" required checked>
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -296,8 +300,8 @@
                     <p>Copyright © 2021 Fintrender. All rights reserved.</p>
 
                     <ul>
-                        <li><a href="termos.html">Políticas de Privacidade</a></li>
-                        <li><a href="termos.html">Termos e Condições</a></li>
+                        <li><a href="?page=navega&pg=termos">Políticas de Privacidade</a></li>
+                        <li><a href="?page=navega&pg=termos">Termos e Condições</a></li>
                     </ul>
                 </div>
             </div>
