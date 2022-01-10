@@ -1750,6 +1750,21 @@ footer .copy-box ul li a {
   }
 }
 
+.moduleHero .col60 img {
+  width: 100%;
+  height: auto;
+}
+
+.moduleHero .col60 img.img1 {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleHero .col60 img {
+    width: 85%;
+  }
+}
+
 .moduleHero .col60 .btn {
   width: 100%;
   -webkit-animation: newpulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
@@ -1926,7 +1941,7 @@ footer .copy-box ul li a {
 .moduleFeature-cards {
   width: 100%;
   height: auto;
-  padding: 60px 0;
+  padding: 0 0 60px;
 }
 
 .moduleFeature-cards h1 {
@@ -1968,6 +1983,11 @@ footer .copy-box ul li a {
           align-items: center;
   justify-self: flex-start;
   padding: 55px 0;
+}
+
+.moduleFeature-cards .wrap-card .step-box img {
+  width: 100%;
+  height: auto;
 }
 
 .moduleFeature-cards .wrap-card .step-box icon {
@@ -2115,6 +2135,12 @@ footer .copy-box ul li a {
   letter-spacing: -0.4px;
   /* Colors / White */
   color: #FFFFFF;
+}
+
+.moduleFeature-gustavo .col60 .profile-texto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .moduleFeature-gustavo .col60 p {
@@ -2363,6 +2389,7 @@ footer .copy-box ul li a {
 
 .moduleTransmissao {
   padding: 70px 0 30px;
+  padding: 0;
 }
 
 .moduleTransmissao h3 {
@@ -2387,6 +2414,37 @@ footer .copy-box ul li a {
     text-align: center;
     margin-bottom: 70px;
   }
+}
+
+.moduleTransmissao .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .grid {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.moduleTransmissao img.img2 {
+  width: 100%;
+  height: auto;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: block;
 }
 
 .moduleTransmissao .transmissao-box {
@@ -2434,7 +2492,13 @@ footer .copy-box ul li a {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleTransmissao .cta-box {
+    margin-left: 122px;
+  }
 }
 
 .moduleTransmissao .cta-box .esquerda {

@@ -1,5 +1,6 @@
 .moduleTransmissao{
     padding: 70px 0 30px;
+    padding: 0;
     
     h3{
         max-width: 860px;
@@ -21,6 +22,24 @@
             line-height: 50px;
             text-align: center;
             margin-bottom: 70px;
+        }
+    }
+    .grid{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        @include respond-to-min(750){
+            flex-direction: row;
+        }
+    }
+    img{
+        &.img2{
+            width: 100%;
+            height: auto;
+            max-width: 760px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            display: block;
         }
     }
     .transmissao-box{
@@ -61,7 +80,10 @@
         position: relative;
         width: fit-content;
         margin: auto;
-        margin-top: 70px;
+        margin-top: 0;
+        @include respond-to-min(750){
+            margin-left: 122px;
+        }
         .esquerda{
             position: absolute;
             top: 0;
